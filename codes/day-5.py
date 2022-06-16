@@ -1,7 +1,27 @@
-import colorama
-from colorama import Fore, Back, Style
-colorama.init(autoreset=True)
+datas=[
+    {
+        "username": "deepak",
+        "password": "dk123",    
+        'props':{
+            "name":"deepak",
+            "age":20,
+            "address":"lakhe nagar"
+            }
+    },
+    {   
+        "username": "lokesh",
+        "password": "lk123",
+        "props":{
+            "name":"lokesh",
+            "age":20,
+            "address":"raipura"
+            }
+    }
+]
 
-print(Fore.WHITE+Back.RED+"Hi My name is Aman Kharwal "+ Fore.YELLOW+ Back.BLUE+"I am your Machine Learning Instructor")
-print(Back.CYAN+"Hi My name is Aman Kharwal")
-print(Fore.RED + Back.GREEN+ "Hi My name is Aman Kharwal")
+username=input("enter the username:")
+password=input("enter the password:")
+for data in datas:
+    if(username == data['username']):
+        if(password == data['password']):
+            print("props", data['props'])

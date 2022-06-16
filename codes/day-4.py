@@ -1,8 +1,7 @@
-studnet1={"name":'deepak', "age":20}
-studnet2={"name":'lokesh', "age":20}
-studnet3={"name":'nomesh', "age":20}
-
-print("Student name is", studnet1['name'], "and age is", studnet1['age'])
-
-
-# print(f"Studnet name is f{studnet1['name']}, and age is f{studnet1['age']}")
+num = int(input("enter the number: "))
+res=0
+while(num>0):
+    print(num)
+    res=res+num
+    num=num-1 
+print(res)
