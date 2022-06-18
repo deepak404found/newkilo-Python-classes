@@ -1,4 +1,4 @@
-datas=[
+users=[
     {
         "username": "deepak",
         "password": "dk123",    
@@ -21,7 +21,7 @@ datas=[
 
 username=input("enter the username:")
 password=input("enter the password:")
-for data in datas:
+for data in users:
     if(username == data['username']):
         if(password == data['password']):
             print("props", data['props'])
